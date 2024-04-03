@@ -12,4 +12,4 @@ function hasCycle(graph, node, visited = new Set(), parent = null) {
     return false;
 }
 
-
+console.log(hasCycle(graph, "A"));
