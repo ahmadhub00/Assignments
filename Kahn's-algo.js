@@ -28,3 +28,11 @@ function topologicalSort(graph) {
     return result.length === Object.keys(graph).length ? result : "Cycle detected!";
 }
 
+let dag = {
+    A: ["B", "C"],
+    B: ["D"],
+    C: ["D"],
+    D: []
+};
+
+console.log(topologicalSort(dag));
