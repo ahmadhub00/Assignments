@@ -9,3 +9,5 @@ function quickSort(arr) {
     return [...quickSort(left), ...middle, ...quickSort(right)];
 }
 
+let arr = prompt("Enter numbers separated by spaces:").split(" ").map(Number);
+console.log("Sorted array:", quickSort(arr));
